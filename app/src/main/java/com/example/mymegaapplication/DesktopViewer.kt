@@ -106,7 +106,7 @@ class DesktopViewer : AppCompatActivity() {
                 val tmf: TrustManagerFactory = TrustManagerFactory.getInstance("X509")
                 tmf.init(ks)
                 val kmf: KeyManagerFactory = KeyManagerFactory.getInstance("X509")
-                kmf.init(ks, "Alf red".toCharArray())
+                kmf.init(ks, "PasswordString".toCharArray())
                 val sslContext: SSLContext = SSLContext.getInstance("TLS")
                 sslContext.init(kmf.keyManagers, tmf.trustManagers, null);
 
