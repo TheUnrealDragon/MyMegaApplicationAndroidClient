@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DesktopViewer">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="336dp"
+        android:alpha="0.2"
+        android:background="#00ECDDDD"
+        android:clickable="true"
+        android:contentDescription="Action Button"
+        app:backgroundTint="#B9E85353"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.51"
+        app:rippleColor="#00FFFBFB"
+        app:srcCompat="@color/teal_700" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_width="194dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="352dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="373dp"
+        android:text="PNG"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <EditText
+        android:id="@+id/keyboardEdit"
+        android:layout_width="243dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="352dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
