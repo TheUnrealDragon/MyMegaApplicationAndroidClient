@@ -102,7 +102,7 @@ class DesktopViewer : AppCompatActivity() {
                 Log.d("WebSocketClient","Path: ${path.toString()}")
                 var fis = FileInputStream(path);
                 val ks = KeyStore.getInstance("pkcs12")
-                ks.load(fis, "Alf red".toCharArray())
+                ks.load(fis, "PasswordString".toCharArray())
                 val tmf: TrustManagerFactory = TrustManagerFactory.getInstance("X509")
                 tmf.init(ks)
                 val kmf: KeyManagerFactory = KeyManagerFactory.getInstance("X509")
